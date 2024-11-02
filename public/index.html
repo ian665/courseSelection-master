@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <div class="loginContainer">
+    <h2>放假大學選課系統</h2>
+    <div class="accountTypeContainer">
+      <div class="account-type" id="teacher-account">
+        <img src="images\teacherimage.jpg" alt="Teacher-image">
+        <div class="accountType">教職員</div>
+        <img class="selectedimage" src="images/selectedimage.jpg" alt="selectedimage">
+      </div>
+      <div class="account-type selected" id="student-account">
+        <img src="images/studentimage.jpg" alt="Student-image">
+        <div class="accountType">學生</div>
+        <img class="selectedimage" src="images/selectedimage.jpg" alt="selectedimage">
+      </div>
+    </div>
+    <p>請選擇登入身分<br>請使用學校信箱登入系統</p>
+    <form id="loginForm" class="loginForm">
+      <div class="inputGroup">
+        <img src="images\emailimage.jpg" alt="emailimage">
+        <input name="account" type="text" placeholder="請輸入帳號" required>
+      </div>
+      <div class="inputGroup">
+        <img src="images\passwordimage.jpg" alt="passwordimage">
+        <input name="password" type="password" placeholder="請輸入密碼" required>
+      </div>
+      <button type="submit" id="loginButton" class="loginButton">登入</button>
+    </form>
+    <div class="options">
+      <p>忘記密碼?</p>
+      <a href="localhost">請點擊這裡</a>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
